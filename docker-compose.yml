@@ -1,4 +1,4 @@
-version: '3.8'
+# version: '3.8'
 
 services:
 
@@ -47,7 +47,8 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
   connect:
-    image: debezium/connect:latest
+    # image: debezium/connect:latest
+    image: debezium/connect:2.5
     container_name: connect
     ports:
       - "8083:8083"
